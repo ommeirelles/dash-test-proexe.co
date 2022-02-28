@@ -1,48 +1,26 @@
-/**
- * This injects Tailwind's base styles and any base styles registered by
- * plugins.
- */
 @tailwind base;
-
-/**
-   * This injects Tailwind's component classes and any component classes
-   * registered by plugins.
-   */
 @tailwind components;
-
-/**
-   * This injects Tailwind's utility classes and any utility classes registered
-   * by plugins.
-   */
 @tailwind utilities;
-
-/**
-   * Use this directive to control where Tailwind injects the hover, focus,
-   * responsive, dark mode, and other variants of each class.
-   *
-   * If omitted, Tailwind will append these classes to the very end of
-   * your stylesheet by default.
-   */
 @tailwind variants;
 
+* {
+  @apply font-overpass;
+}
+
 @layer components {
-  .atom-table {
-    @apply m-5;
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
-    td,
-    th {
-      @apply py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white;
-    }
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
 
-    tbody tr {
-      @apply odd:bg-light-primary even:bg-light-primaryVariant dark:odd:bg-dark-primary dark:even:bg-dark-primaryVariant;
-    }
+  .text-shadow-lg {
+    text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
 
-    thead tr {
-      @apply bg-light-surface dark:bg-dark-surface;
-      th {
-        @apply uppercase font-bold;
-      }
-    }
+  .text-shadow-none {
+    text-shadow: none;
   }
 }

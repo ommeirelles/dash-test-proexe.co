@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components {
+  .atom-table {
+    @apply m-5;
+
+    td,
+    th {
+      @apply px-0 sm:px-1 md:px-6 py-4 font-medium whitespace-nowrap items-center;
+      @apply text-xs md:text-sm text-center text-ellipsis whitespace-nowrap;
+    }
+
+    tbody tr {
+      @apply odd:bg-light-primary even:bg-light-primaryVariant dark:odd:bg-dark-primary dark:even:bg-dark-primaryVariant;
+      @apply even:text-white dark:text-gray-900 odd:text-gray-900;
+    }
+
+    thead tr {
+      @apply bg-light-surface dark:bg-dark-surface;
+      th {
+        @apply uppercase font-bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components {
+  .btn {
+    @apply antialiased font-overpass focus:ring-0 font-medium  rounded-lg  text-sm  px-4 py-2.5  text-center shadow-sm shadow-black mx-1;
+
+    &.btn-primary {
+      @apply bg-light-primary hover:bg-light-primaryVariant text-light-onPrimary;
+      @apply dark:bg-dark-primary dark:hover:bg-dark-primaryVariant dark:text-dark-onPrimary;
+    }
+    &.btn-secondary {
+      @apply bg-light-secondary hover:bg-light-secondaryVariant text-light-onSecondary;
+      @apply dark:bg-dark-secondary dark:hover:bg-dark-secondaryVariant dark:text-dark-onSecondary;
+    }
+    &.btn-error {
+      @apply bg-light-error hover:bg-red-900 text-light-onError;
+      @apply dark:bg-dark-error hover:bg-red-900 dark:text-dark-onError;
+    }
+  }
+}
