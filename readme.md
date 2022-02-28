@@ -1,3 +1,9 @@
+# UserDashboard Example
+
+- [Tech](#built-with)
+- [Getting Started](#getting-started)
+- [Notes](#notes)
+
 ## Built With
 
 - React
@@ -18,6 +24,7 @@ In order to run this repository you will need to have node installed.
 ## Notes:
 
 - Front-end make uses of atomic design.
+- husky, prettier and lint to enforce better code quality.
 - Form validation doesn't gives the user a feedback for error on the api side. Only the happy path was implemented.
 - If large list of user is used a restful pagination could be achieved easily.
 - Redux Store is all inside one file (not the desired solution but in order to work faster and with this little application wasn't a problem)
