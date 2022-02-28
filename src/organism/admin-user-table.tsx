@@ -27,7 +27,7 @@ export const AdminUserTable = () => {
       form.preventDefault()
       const name = (form.target as unknown as { name: HTMLInputElement }).name.value
       const email = (form.target as unknown as { email: HTMLInputElement }).email.value
-      if (user && !user.id) dispatch(ADD_USER_ACTION({ name, email } as unknown as User))
+      if (!user) dispatch(ADD_USER_ACTION({ name, email } as unknown as User))
       if (user && user.id) dispatch(UPDATE_USER_ACTION({ ...user, name, email }))
       setUser(undefined)
       setUserModal(false)
