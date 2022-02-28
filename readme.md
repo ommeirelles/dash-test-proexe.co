@@ -24,6 +24,8 @@ In order to run this repository you will need to have node installed.
 ## Notes:
 
 - Front-end make uses of atomic design.
+- dark and light theme implemented with tailwind.
+- Table ordering not done because I run out of time.
 - husky, prettier and lint to enforce better code quality.
 - RESTFUL API mocked with json-server using [the file](/data/data.json) as start point
 - Form validation doesn't gives the user a feedback for error (5xx) on the api side. Only the happy path was implemented.
