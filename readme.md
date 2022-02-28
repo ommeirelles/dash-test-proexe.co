@@ -25,6 +25,7 @@ In order to run this repository you will need to have node installed.
 
 - Front-end make uses of atomic design.
 - husky, prettier and lint to enforce better code quality.
-- Form validation doesn't gives the user a feedback for error on the api side. Only the happy path was implemented.
+- RESTFUL API mocked with json-server using [the file](/data/data.json) as start point
+- Form validation doesn't gives the user a feedback for error (5xx) on the api side. Only the happy path was implemented.
 - If large list of user is used a restful pagination could be achieved easily.
 - Redux Store is all inside one file (not the desired solution but in order to work faster and with this little application wasn't a problem)
