@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "prettier --write src/**/*.{ts,tsx,scss,css,json}",
-    "api": "json-server --watch ./data/data.json --port 4000"
+    "api": "json-server --watch ./data/data.json",
+    "start": "yarn api --port $PORT"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.5",
